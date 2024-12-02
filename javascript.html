@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <title>Página</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/contato.css">
     <style>
         main{
             max-width: 1200px;
@@ -15,6 +16,7 @@
         section {
             padding: 20px;
             border-bottom: 1px dashed gray;
+            text-align: center;
         }
 
         section h1 {
@@ -28,6 +30,46 @@
             font-size: 20px;
             color: gray;
         }
+
+        #clique-me{
+            display: inline-block;
+            background-color: #0b1054;
+            color: beige;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 30px auto;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #clique-me:hover{
+            color:cadetblue;
+            box-shadow: 0 0 8px 3px cadetblue;
+        }
+
+        #msg{
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            line-height: 30px;
+        }
+
+        form{
+            max-width: 70%;
+            margin: 30px auto;
+        }
+
+        #nome{
+            font-size: 25px;
+
+        }
+
+        article{
+            font-size: 20px;
+            color: black;
+        }
+
     </style>
 </head>
 <body>
@@ -43,22 +85,22 @@
     </header>
     <main>
         <section>
-            <h1 id="hello">Clique em mim!</h1>
-            <div id="msg"><h1>DIV</h1></div>
-        </section> 
+            <h1>Javascript</h1>
+            <a id="clique-me">clique-me</a>
+            <div><p id="msg">ola</p></div>
+            <article></article>
+
+            <form>
+                <input type="text" name="nomeInput" id="nomeinput" placeholder="Digite nome">
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
+        </section>
+
     </main>
     <footer>
-        <p>Copyright &copy; 1962-2024 - <a href="https://googledoodle.com" target="_blank">Parisotto.Net Internet</a></p>
+        <p>Copyright &copy; 1962-2024 - <a href="https://googledoodle.com" target="_blank">Planeta asquivo</a></p>
         <p>coleção de pensamentos</p>
     </footer>
-    <script>
-        function ola(){
-            window.alert("Bom dai pessoas")
-        }
-        var elemento = document.getElementById("hello")
-        elemento.addEventListener('click', ola)
-        let minhaDIV= document.getElementById("msg")
-        minhaDIV.innerHTML= "<p>mudei conteúdo</p>"
-    </script>
+    <script src="./js/javascript.js"></script>
 </body>
 </html>
